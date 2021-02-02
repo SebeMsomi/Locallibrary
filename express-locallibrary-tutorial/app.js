@@ -1,7 +1,7 @@
 var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
-var cookieParser = require('cookie-parser');
+//var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
@@ -18,20 +18,6 @@ const sequelize = new Sequelize('PracticeDataBase', 'Sebza', 'Sionesebemsomi1994
   dialect: 'mssql' 
 });
 
-/*try {
-  await: sequelize.authenticate();
-  console.log('Connection has been established successfully.');
-} catch (error) {
-  console.error('Unable to connect to the database:', error);
-}*/
-// Set up mongoose connection
-/*var mongoose = require('mongoose');
-var dev_db_url = 'mongodb+srv://cooluser:coolpassword@cluster0.a9azn.mongodb.net/local_library?retryWrites=true';
-var mongoDB = process.env.MONGODB_URI || dev_db_url;
-mongoose.connect(mongoDB, {useNewUrlParser: true, useUnifiedTopology: true});
-mongoose.Promise = global.Promise;
-var db = mongoose.connection;
-db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 app.get('/', function (req, res) {
    
     var sql = require("mssql");
@@ -42,7 +28,7 @@ app.get('/', function (req, res) {
         user: 'Sebza',
         password: 'Sionesebemsomi1994!',
         server: 'MSOMISEBE', 
-        database: 'PracticeDataBase',
+        database: 'populatedb',
 		options: {
 			trustedConnection:true
 		}
@@ -57,7 +43,7 @@ app.get('/', function (req, res) {
         var request = new sql.Request();
            
         // query to the database and get the records
-        request.query('select * from practicedata', function (err, recordset) {
+        request.query('select * from AUTHOR', function (err, recordset) {
             
             if (err) console.log(err)
 
@@ -66,7 +52,7 @@ app.get('/', function (req, res) {
             
         });
     });
-});*/
+});
 
 
 // view engine setup
@@ -76,7 +62,7 @@ app.set('view engine', 'pug');
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
-app.use(cookieParser());
+//app.use(cookieParser());
 app.use(helmet());
 app.use(compression()); // Compress all routes
 
