@@ -5,13 +5,14 @@ This web application creates an online catalog for a small local library, where 
 
 I need to implement the follwoing functionalities:
 
-Display all authors Display all books
-Implement Create, Read, Update and Delete for Author
-Implement Create, Read, Update and Delete for Books
-Implement model for BookInstance, Genre
-Implement model for Genre
-Implement controller for BookInstance
-Implement controller for Genre
+Display all authors <br>
+Display all books<br>
+Implement Create, Read, Update and Delete for Author<br>
+Implement Create, Read, Update and Delete for Books<br>
+Implement model for BookInstance, Genre<br>
+Implement model for Genre<br>
+Implement controller for BookInstance<br>
+Implement controller for Genre<br>
 
 To get this project up and running locally on your computer:<br>
 1.Set up a Nodejs development environment.<br>
