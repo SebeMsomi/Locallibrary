@@ -1,8 +1,8 @@
-/*const { body,validationResult } = require('express-validator');
+const { body,validationResult } = require('express-validator');
 const {Model} = require('sequelize');
 
-var Book = require('../sequelize/book');
-var Author = require('../sequelize/author');
+//var Book = require('../Sequelize-CLI/book');
+var Author = require('../Sequelize-CLI/models/author');
 
 
 var async = require('async');
@@ -29,4 +29,4 @@ exports.book_list = function(req, res, next) {
       res.render('book_list', { title: 'Book List', book_list: list_books });
     });
     
-};*/
+};
