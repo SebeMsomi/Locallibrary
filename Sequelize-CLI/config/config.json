@@ -1,24 +1,23 @@
 {
   "development": {
-    "username": "root",
-    "password": null,
-    "database": "database_development",
+    "username": "Sebza",
+    "password": "Sionesebemsomi1994!",
+    "database": "PracticeDataBase",
     "host": "127.0.0.1",
-    "dialect": "mysql"
+    "dialect": "mssql"
   },
-
   "test": {
-    "username": "root",
-    "password": null,
-    "database": "database_test",
+        "username": "Sebza",
+    "password": "Sionesebemsomi1994!",
+    "database": "PracticeDataBase",
     "host": "127.0.0.1",
-    "dialect": "mysql"
+    "dialect": "mssql"
   },
   "production": {
-    "username": "root",
-    "password": null,
-    "database": "database_production",
+        "username": "Sebza",
+    "password": "Sionesebemsomi1994!",
+    "database": "PracticeDataBase",
     "host": "127.0.0.1",
-    "dialect": "mysql"
+    "dialect": "mssql"
   }
 }
